@@ -1,0 +1,27 @@
+{
+  "name": "ast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "npx nodemon app.js",
+    "client": "npm run start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Pavel Kolodeznyy",
+  "license": "ISC",
+  "dependencies": {
+    "append-field": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7",
+    "redis": "^4.4.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  }
+}
